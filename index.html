@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moonhouse Investments — Недвижимость в странах СНГ</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo"><img src="moonhouse-logo.svg" alt="Moonhouse Investments"></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#destinations">Направления</a></li>
+    <li><a href="#properties">Объекты</a></li>
+    <li><a href="#offices">Офис</a></li>
+    <li><a href="#contact">Контакты</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+  <a href="tel:+77076777500" class="nav-phone">+7 707 677 75 00</a>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- SOCIAL SIDEBAR -->
+<div class="social-sidebar">
+  <a href="https://wa.me/77076777500" target="_blank" rel="noopener" title="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <a href="https://t.me/moonhouseinvest" target="_blank" rel="noopener" title="Telegram">
+    <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+  </a>
+  <a href="https://instagram.com/moonhouseinvest" target="_blank" rel="noopener" title="Instagram">
+    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+  </a>
+  <a href="https://linkedin.com/company/moonhouse-investments" target="_blank" rel="noopener" title="LinkedIn">
+    <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+  </a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div id="hero-slides"></div>
+  <div class="hero-overlay"></div>
+  <span class="hero-label" id="hero-label"></span>
+  <div class="hero-dots" id="hero-dots"></div>
+  <div class="hero-content">
+    <p class="hero-tag">Real Estate for Living and Investment Abroad</p>
+    <h1>Недвижимость за рубежом — для <em>жизни</em> и инвестиций</h1>
+    <p>Помогаем выгодно инвестировать в зарубежную недвижимость. Более 500 объектов в 20+ странах. Подбор, сопровождение сделки и управление активами.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-gold">Получить консультацию</a>
+      <a href="#properties" class="btn-outline">Смотреть объекты</a>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-grid">
+    <div>
+      <div class="stat-num">20+</div>
+      <div class="stat-label">стран для инвестиций</div>
+    </div>
+    <div>
+      <div class="stat-num">500+</div>
+      <div class="stat-label">объектов в портфеле</div>
+    </div>
+    <div>
+      <div class="stat-num">$1.5B+</div>
+      <div class="stat-label">общий объём инвестиций клиентов</div>
+    </div>
+    <div>
+      <div class="stat-num">100+</div>
+      <div class="stat-label">партнёров по всему миру</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services">
+  <p class="section-label">Чем мы занимаемся</p>
+  <h2 class="section-title">Наши <em>направления</em></h2>
+  <div class="divider"></div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🏠</span>
+      <h3>Недвижимость для жизни</h3>
+      <p>Подбираем апартаменты, виллы и пентхаусы под ваш образ жизни и бюджет — в Армении, Грузии, Казахстане, России и других странах СНГ.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">📈</span>
+      <h3>Инвестиции в недвижимость</h3>
+      <p>Помогаем выбрать объекты с доходностью от 20%. Анализ рынка, инвестиционная стратегия и контроль доходности.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🗂️</span>
+      <h3>Управление активами</h3>
+      <p>Управляем вашей зарубежной недвижимостью: арендный менеджмент, обслуживание объектов, отчётность и оптимизация доходности.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🛂</span>
+      <h3>ВНЖ через инвестиции</h3>
+      <p>Резидентство и паспорт через инвестиции в недвижимость в 18+ странах: ОАЭ Golden Visa, Греция, Португалия и другие программы.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">⚠️</span>
+      <h3>Проблемные активы</h3>
+      <p>Работаем с проблемной недвижимостью: объекты под обременением, в залоге, с долгами или спорным правом собственности. Находим решение там, где другие отказывают.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔒</span>
+      <h3>Санкционная недвижимость</h3>
+      <p>Помогаем гражданам и юридическим лицам разобраться с недвижимостью, попавшей под санкционные ограничения: оценка рисков, структурирование, выход из актива.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🇷🇺</span>
+      <h3>Недвижимость в России</h3>
+      <p>Решаем вопросы с недвижимым имуществом на территории России для граждан недружественных стран: продажа, управление, вывод средств в рамках действующего законодательства.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🤝</span>
+      <h3>Юридическое сопровождение</h3>
+      <p>Полное сопровождение сделки от первого звонка до ключей: переговоры, оформление за рубежом, помощь с ипотекой и последующая перепродажа.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="destinations" id="destinations">
+  <p class="section-label">Где мы работаем</p>
+  <h2 class="section-title">Недвижимость в <em>странах СНГ</em> и за рубежом</h2>
+  <div class="divider"></div>
+  <div class="dest-grid">
+    <a href="country-russia.html" class="dest-card">
+      <div class="dest-bg" style="background-image:url('https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=70')"></div>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <span class="dest-name">Россия</span>
+        <span class="dest-count">Москва, Санкт-Петербург</span>
+      </div>
+    </a>
+    <a href="country-kazakhstan.html" class="dest-card">
+      <div class="dest-bg" style="background-image:url('https://images.unsplash.com/photo-1557841066-eefe351308b3?w=600&q=70')"></div>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <span class="dest-name">Казахстан</span>
+        <span class="dest-count">Астана, Алматы</span>
+      </div>
+    </a>
+    <a href="country-georgia.html" class="dest-card">
+      <div class="dest-bg" style="background-image:url('https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=70')"></div>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <span class="dest-name">Грузия</span>
+        <span class="dest-count">Тбилиси, Батуми</span>
+      </div>
+    </a>
+    <a href="country-armenia.html" class="dest-card">
+      <div class="dest-bg" style="background-image:url('https://images.pexels.com/photos/35185040/pexels-photo-35185040.jpeg?auto=compress&cs=tinysrgb&w=600')"></div>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <span class="dest-name">Армения</span>
+        <span class="dest-count">Ереван</span>
+      </div>
+    </a>
+    <a href="country-uzbekistan.html" class="dest-card">
+      <div class="dest-bg" style="background-image:url('https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?w=600&q=70')"></div>
+      <div class="dest-overlay"></div>
+      <div class="dest-info">
+        <span class="dest-name">Узбекистан</span>
+        <span class="dest-count">Ташкент, Самарканд</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- PROPERTIES -->
+<section class="properties" id="properties">
+  <p class="section-label">Актуальные предложения</p>
+  <h2 class="section-title">Объекты в <em>странах СНГ</em></h2>
+  <div class="divider"></div>
+  <div class="props-grid">
+
+    <a href="property-moscow.html" class="prop-card prop-card-link">
+      <div class="prop-img" style="background-image:url('https://images.unsplash.com/photo-1513326738677-b964603b136d?w=600&q=75')">
+        <div class="prop-badges">
+          <span class="badge badge-hot">Горячее</span>
+          <span class="badge badge-invest">Инвестиции</span>
+        </div>
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Россия, Москва</p>
+        <p class="prop-name">Апартаменты в Москва-Сити</p>
+        <p class="prop-price">от 25 000 000 ₽</p>
+        <p class="prop-desc">Апартаменты в деловом центре с панорамным видом на Москву. Высокая ликвидность, доходность от 12% годовых.</p>
+        <div class="prop-footer">
+          <span><span class="status-dot status-done"></span>Сдан</span>
+          <span>Ипотека доступна</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="property-astana.html" class="prop-card prop-card-link">
+      <div class="prop-img" style="background-image:url('https://images.unsplash.com/photo-1557841066-eefe351308b3?w=600&q=75')">
+        <div class="prop-badges">
+          <span class="badge badge-new">Новый</span>
+          <span class="badge badge-top">Топ</span>
+        </div>
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Казахстан, Астана</p>
+        <p class="prop-name">ЖК «Expo Boulevard»</p>
+        <p class="prop-price">от 65 000 000 ₸</p>
+        <p class="prop-desc">Премиальный жилой комплекс в левобережной части Астаны. Развитая инфраструктура, рядом с ЭКСПО.</p>
+        <div class="prop-footer">
+          <span><span class="status-dot status-build"></span>Строится</span>
+          <span>Q4 2026</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="property-tbilisi.html" class="prop-card prop-card-link">
+      <div class="prop-img" style="background-image:url('https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=75')">
+        <div class="prop-badges">
+          <span class="badge badge-invest">Инвестиции</span>
+        </div>
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Грузия, Тбилиси</p>
+        <p class="prop-name">Апартаменты в Ваке</p>
+        <p class="prop-price">от $85,000</p>
+        <p class="prop-desc">Апартаменты в элитном районе Ваке. Доходность от аренды 8–10% в год. Возможность получения ВНЖ Грузии.</p>
+        <div class="prop-footer">
+          <span><span class="status-dot status-build"></span>Строится</span>
+          <span>Q2 2026</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="property-yerevan.html" class="prop-card prop-card-link">
+      <div class="prop-img" style="background-image:url('https://images.pexels.com/photos/35185040/pexels-photo-35185040.jpeg?auto=compress&cs=tinysrgb&w=600')">
+        <div class="prop-badges">
+          <span class="badge badge-hot">Горячее</span>
+        </div>
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Армения, Ереван</p>
+        <p class="prop-name">Северный проспект</p>
+        <p class="prop-price">от $65,000</p>
+        <p class="prop-desc">Квартиры в центре Еревана на главной пешеходной улице. Стабильный рентный доход. Простое оформление для иностранцев.</p>
+        <div class="prop-footer">
+          <span><span class="status-dot status-done"></span>Сдан</span>
+          <span>Готов к заезду</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="property-tashkent.html" class="prop-card prop-card-link">
+      <div class="prop-img" style="background-image:url('https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?w=600&q=75')">
+        <div class="prop-badges">
+          <span class="badge badge-new">Новый</span>
+          <span class="badge badge-invest">Инвестиции</span>
+        </div>
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Узбекистан, Ташкент</p>
+        <p class="prop-name">Tashkent City Residence</p>
+        <p class="prop-price">от $55,000</p>
+        <p class="prop-desc">Квартиры в новом деловом центре Ташкента. Быстрорастущий рынок, доходность до 15% годовых.</p>
+        <div class="prop-footer">
+          <span><span class="status-dot status-build"></span>Строится</span>
+          <span>Q1 2027</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="property-almaty.html" class="prop-card prop-card-link">
+      <div class="prop-img" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=75')">
+        <div class="prop-badges">
+          <span class="badge badge-top">Топ</span>
+          <span class="badge badge-invest">Инвестиции</span>
+        </div>
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Казахстан, Алматы</p>
+        <p class="prop-name">ЖК «Esentai Park»</p>
+        <p class="prop-price">от 90 000 000 ₸</p>
+        <p class="prop-desc">Элитный комплекс в Алматы рядом с деловым центром. Управляемая аренда, доходность 10–12% в год.</p>
+        <div class="prop-footer">
+          <span><span class="status-dot status-done"></span>Сдан</span>
+          <span>Под аренду</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why">
+  <p class="section-label">Наши преимущества</p>
+  <h2 class="section-title" style="color:var(--white);">Почему доверяют <em>Moonhouse</em></h2>
+  <div class="divider" style="background:rgba(184,144,80,0.4);margin-bottom:56px;"></div>
+  <div class="why-grid">
+    <div class="why-item">
+      <h3>Опыт с 1998 года</h3>
+      <p>Более 25 лет в международных инвестициях в недвижимость. Лауреат Asia Pacific Property Awards 2022–2023. TOP-1 брокер от ALDAR Properties 2024.</p>
+    </div>
+    <div class="why-item">
+      <h3>Мы в Астане</h3>
+      <p>Живой офис, живые специалисты. Разговариваем на русском и казахском. Не просто консультируем — ведём сделку от первого звонка до получения ключей.</p>
+    </div>
+    <div class="why-item">
+      <h3>Инвестиция, а не покупка</h3>
+      <p>Подбираем объекты с реальной доходностью, помогаем с оформлением за рубежом, управляем арендой и сопровождаем при перепродаже.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICES -->
+<section class="offices" id="offices">
+  <p class="section-label">Мы рядом с вами</p>
+  <h2 class="section-title">Наш <em>офис</em></h2>
+  <div class="divider"></div>
+  <div class="offices-single">
+    <div class="office-card">
+      <p class="office-city">Астана</p>
+      <p class="office-country">Казахстан</p>
+      <div class="office-row">
+        <span class="office-row-label">Адрес</span>
+        <span>Астана, Казахстан</span>
+      </div>
+      <div class="office-row">
+        <span class="office-row-label">Телефон</span>
+        <a href="tel:+77076777500">+7 707 677 75 00</a>
+      </div>
+      <div class="office-row">
+        <span class="office-row-label">Режим работы</span>
+        <span>Пн–Пт 11:00–20:00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p class="section-label">Свяжитесь с нами</p>
+      <h2 class="section-title">Бесплатная <em>консультация</em></h2>
+      <div class="divider"></div>
+      <p>Расскажите о своих целях — наш специалист подберёт подходящие объекты и свяжется с вами в течение одного рабочего дня. Говорим на русском, казахском, английском и арабском.</p>
+      <div class="contact-detail">
+        <span class="contact-label">Телефон</span>
+        <a href="tel:+77076777500">+7 707 677 75 00</a>
+      </div>
+      <div class="contact-detail">
+        <span class="contact-label">Email</span>
+        <a href="mailto:info@moonhouse.investments">info@moonhouse.investments</a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <div class="form-group">
+        <label>Имя *</label>
+        <input type="text" placeholder="Ваше имя">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Телефон *</label>
+          <input type="tel" placeholder="+7 ___ ___ __ __">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Меня интересует</label>
+        <select>
+          <option>Не выбрано</option>
+          <option>Недвижимость для жизни</option>
+          <option>Инвестиции в недвижимость</option>
+          <option>Управление активами</option>
+          <option>Проблемные активы</option>
+          <option>Санкционная недвижимость</option>
+          <option>Недвижимость в России (для иностранцев)</option>
+          <option>ВНЖ через инвестиции</option>
+          <option>Юридическое сопровождение</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Сообщение</label>
+        <textarea placeholder="Расскажите о ваших требованиях..."></textarea>
+      </div>
+      <button class="form-submit">Отправить заявку</button>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER + MAP -->
+<section class="newsletter-section">
+  <div class="newsletter-left">
+    <div>
+      <p class="newsletter-label-small">Будьте в курсе</p>
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <p class="newsletter-sub">Актуальные объекты, аналитика рынка СНГ и эксклюзивные предложения — прямо на вашу почту.</p>
+    </div>
+    <form class="newsletter-form" onsubmit="return false;">
+      <input type="email" class="newsletter-input" placeholder="Ваш email">
+      <button type="submit" class="btn-gold">Подписаться</button>
+    </form>
+  </div>
+  <div class="footer-map-box">
+    <p class="newsletter-label-small">Наш офис</p>
+    <p class="map-address">Казахстан, Астана</p>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=71.38%2C51.13%2C71.52%2C51.21&layer=mapnik&marker=51.169%2C71.449"
+      frameborder="0" scrolling="no" title="Офис Moonhouse — Астана"></iframe>
+    <a href="https://www.openstreetmap.org/?mlat=51.169&mlon=71.449#map=14/51.169/71.449"
+      target="_blank" rel="noopener" class="map-link">Открыть на карте →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="#" class="footer-logo"><img src="moonhouse-logo.svg" alt="Moonhouse Investments"></a>
+      <p class="footer-about">Недвижимость для жизни и инвестиций в странах СНГ. Помогаем выгодно вложить в недвижимость с 1998 года. Офис в Астане.</p>
+      <div class="footer-contact">
+        <div>Астана, Казахстан</div>
+        <div><a href="tel:+77076777500">+7 707 677 75 00</a></div>
+        <div><a href="mailto:info@moonhouse.investments">info@moonhouse.investments</a></div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Услуги</h4>
+      <ul>
+        <li><a href="#properties">Жилая недвижимость</a></li>
+        <li><a href="#properties">Коммерческая недвижимость</a></li>
+        <li><a href="#properties">Инвестиционные проекты</a></li>
+        <li><a href="#contact">ВНЖ и гражданство</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Компания</h4>
+      <ul>
+        <li><a href="#destinations">Направления</a></li>
+        <li><a href="#offices">Офис в Астане</a></li>
+        <li><a href="#contact">Контакты</a></li>
+        <li><a href="#contact">Консультация</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Moonhouse Investments Limited. Все права защищены.</span>
+    <span><a href="#" style="color:rgba(255,255,255,0.2);text-decoration:none;">Политика конфиденциальности</a></span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
