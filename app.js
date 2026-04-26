@@ -26,10 +26,10 @@ document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click
 // ── Hero slideshow ───────────────────────────────────────
 const slides = [
   { url: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=1600&q=80', label: 'Москва, Россия' },
-  { url: 'https://images.unsplash.com/photo-1557841066-eefe351308b3?w=1600&q=80', label: 'Астана, Казахстан' },
+  { url: 'images/pexels-aibek-skakov-418917601-18555127.jpg', label: 'Астана, Казахстан' },
   { url: 'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1600&q=80', label: 'Тбилиси, Грузия' },
-  { url: 'https://images.pexels.com/photos/35185040/pexels-photo-35185040.jpeg?auto=compress&cs=tinysrgb&w=1600', label: 'Ереван, Армения' },
-  { url: 'https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?w=1600&q=80', label: 'Ташкент, Узбекистан' },
+  { url: 'images/pexels-paul-5937660.jpg', label: 'Ереван, Армения' },
+  { url: 'images/pexels-ahmet-hilmi-ermis-480844837-32037638.jpg', label: 'Ташкент, Узбекистан' },
 ];
 
 const container = document.getElementById('hero-slides');
@@ -64,3 +64,32 @@ function goTo(idx) {
 }
 
 setInterval(() => goTo((current + 1) % slides.length), 5000);
+
+// ── Toast + form handlers ────────────────────────────────
+const toastEl = document.getElementById('toast');
+let toastTimer = null;
+function showToast(message) {
+  if (!toastEl) return;
+  toastEl.textContent = message;
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 3500);
+}
+
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    showToast('Ваша заявка отправлена');
+    contactForm.reset();
+  });
+}
+
+const newsletterForm = document.getElementById('newsletterForm');
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    showToast('Спасибо, вы подписаны на нашу рассылку');
+    newsletterForm.reset();
+  });
+}
