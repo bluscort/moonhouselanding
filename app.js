@@ -26,7 +26,7 @@ document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click
 // ── Hero slideshow ───────────────────────────────────────
 const slides = [
   { url: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=1600&q=80', label: 'Москва, Россия' },
-  { url: 'https://images.pexels.com/photos/18555127/pexels-photo-18555127.jpeg?auto=compress&cs=tinysrgb&w=1600', label: 'Астана, Казахстан' },
+  { url: 'https://img.forbes.kz/forbes-photobank/media/2025-12-03/91c73f12-7da5-4785-ba60-27eaa8b0797c.jpeg', label: 'Астана, Казахстан' },
   { url: 'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1600&q=80', label: 'Тбилиси, Грузия' },
   { url: 'https://images.pexels.com/photos/5937660/pexels-photo-5937660.jpeg?auto=compress&cs=tinysrgb&w=1600', label: 'Ереван, Армения' },
   { url: 'https://images.pexels.com/photos/32037638/pexels-photo-32037638.jpeg?auto=compress&cs=tinysrgb&w=1600', label: 'Ташкент, Узбекистан' },
