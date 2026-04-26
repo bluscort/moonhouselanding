@@ -26,10 +26,10 @@ document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click
 // ── Hero slideshow ───────────────────────────────────────
 const slides = [
   { url: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=1600&q=80', label: 'Москва, Россия' },
-  { url: 'images/pexels-aibek-skakov-418917601-18555127.jpg', label: 'Астана, Казахстан' },
+  { url: 'https://images.pexels.com/photos/18555127/pexels-photo-18555127.jpeg?auto=compress&cs=tinysrgb&w=1600', label: 'Астана, Казахстан' },
   { url: 'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1600&q=80', label: 'Тбилиси, Грузия' },
-  { url: 'images/pexels-paul-5937660.jpg', label: 'Ереван, Армения' },
-  { url: 'images/pexels-ahmet-hilmi-ermis-480844837-32037638.jpg', label: 'Ташкент, Узбекистан' },
+  { url: 'https://images.pexels.com/photos/5937660/pexels-photo-5937660.jpeg?auto=compress&cs=tinysrgb&w=1600', label: 'Ереван, Армения' },
+  { url: 'https://images.pexels.com/photos/32037638/pexels-photo-32037638.jpeg?auto=compress&cs=tinysrgb&w=1600', label: 'Ташкент, Узбекистан' },
 ];
 
 const container = document.getElementById('hero-slides');
