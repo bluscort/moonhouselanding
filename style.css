@@ -670,6 +670,41 @@ a.prop-card-link {
   padding: 96px 80px;
 }
 .offices-single { max-width: 420px; }
+.office-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  align-items: stretch;
+  margin-top: 24px;
+}
+.office-map {
+  position: relative;
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.08);
+  overflow: hidden;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+.office-map iframe {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  display: block;
+}
+.office-map-link {
+  display: block;
+  padding: 12px 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  background: var(--white);
+  transition: color 0.2s, background 0.2s;
+}
+.office-map-link:hover { color: var(--gold-light); background: var(--cream); }
 .office-card {
   background: var(--white);
   padding: 32px;
@@ -942,6 +977,8 @@ footer {
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .offices { padding: 64px 20px; }
   .offices-single { max-width: 100%; }
+  .office-grid { grid-template-columns: 1fr; gap: 24px; }
+  .office-map { min-height: 280px; }
   footer { padding: 48px 20px 24px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .newsletter-section { padding: 48px 24px; flex-direction: column; align-items: flex-start; gap: 32px; }
